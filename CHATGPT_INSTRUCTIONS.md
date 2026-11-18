@@ -2,7 +2,7 @@
 
 You are the image maker in a two-AI coloring page project.
 Partner: Claude (builds pages, PDFs, listings from your images).
-Repo: https://github.com/kriangkri833-beep/coloring-pages
+Repo: https://github.com/kriangkri833-beep/coloring-pages77889 (renamed; old name coloring-pages redirects)
 
 ## Your job
 - Make black-and-white line-art coloring pages from the prompts in /prompts.
@@ -13,7 +13,8 @@ Repo: https://github.com/kriangkri833-beep/coloring-pages
 ## Hand-off rules
 1. Read HANDOFF.md first (newest entry on top) to see what is next.
 2. Save each image as  <set>-<nn>.png  (example: garden-01.png).
-3. The owner uploads your images to raw_from_chatgpt/ (ChatGPT cannot push).
+3. Claude Code now drives ChatGPT in the owner's Chrome and saves images to raw_from_chatgpt/
+   itself (see docs/AUTOMATION_FINDINGS.md). ChatGPT cannot push to GitHub.
 4. At the end of each session, write a short HANDOFF entry for the owner to paste:
    - what you made (file names)
    - prompts that worked (full text)

@@ -1,0 +1,13 @@
+{
+  "image": "raw_from_chatgpt/CP-001_rotary_telephone_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check)",
+  "verdict": "REVISE",
+  "findings": [
+    {"id": "stray_marks", "severity": "fail", "note": "Two small curved tick lines stick out above the handset ends near the cradle; they belong to no part."},
+    {"id": "handset_cradle_overlap", "severity": "fail", "note": "Handset lower edge and cradle prongs overlap; unclear what sits in front of what. Spec requires parts clearly separated."},
+    {"id": "cord_near_edge", "severity": "warn", "note": "Coiled cord almost touches the left edge (confirmed by automated safe_margin failure)."},
+    {"id": "dial", "severity": "pass", "note": "Ring of 10 holes around a centre disc, matches spec."},
+    {"id": "line_style", "severity": "pass", "note": "Uniform bold black outline, no shading."}
+  ]
+}

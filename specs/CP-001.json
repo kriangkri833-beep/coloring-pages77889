@@ -1,0 +1,71 @@
+{
+  "product_id": "CP-001",
+  "title": "Nostalgic Everyday Treasures",
+  "concept": "20 Bold & Easy printable coloring pages for adults & seniors",
+  "status": "STYLE_PROOF",
+  "formats": ["US_LETTER", "A4"],
+  "target_dpi": 300,
+  "style_rules": [
+    "bold clean black outlines of uniform thickness",
+    "pure white background",
+    "no grey, no shading, no gradients, no hatching",
+    "no text",
+    "large simple enclosed coloring areas",
+    "whole object inside the frame with a wide white margin",
+    "one subject per page, portrait"
+  ],
+  "retry_policy": {
+    "max_attempts_per_image": 4,
+    "on_exhausted": "ESCALATE_TO_OWNER (never auto-accept)",
+    "max_total_attempts_before_pause": 40
+  },
+  "pipeline": ["generate", "retrieve", "auto_qc", "visual_review", "diagnose", "retry_or_accept", "save", "next"],
+  "objects_note": "Objects 4-20 are a DRAFT scene list for owner approval, not yet researched against Etsy competitors.",
+  "objects": [
+    {
+      "id": "rotary_telephone",
+      "name": "vintage rotary telephone",
+      "status": "POC",
+      "structure": [
+        "rounded rectangular base with two small feet",
+        "circular rotary dial on the front: exactly 10 finger holes in a ring, plus a centre disc",
+        "handset lying across the top of the base in a cradle, curved earpiece and mouthpiece ends",
+        "coiled cord running from the handset to the base"
+      ],
+      "must_not": ["parts overlapping or merging", "handset floating off the cradle", "extra buttons", "text or numbers"],
+      "auto_checks": [
+        {"name": "dial_has_10_holes", "type": "similar_round_regions", "count": 10, "area_frac": [0.0004, 0.004], "min_circularity": 0.88, "tuning_note": "raised from 0.75 on 2026-11-18 after attempt a02 gave 11 (false positive: oval non-hole region); real holes measure 0.92-0.95"},
+        {"name": "enough_regions", "type": "min_regions", "count": 14}
+      ],
+      "visual_checks": [
+        "dial has a ring of 10 holes around a centre disc",
+        "handset sits in the cradle on top, two ends distinguishable",
+        "cord attaches from handset to base without crossing the dial",
+        "no part merges into another"
+      ]
+    },
+    {"id": "vintage_radio", "name": "vintage tabletop radio", "status": "TEST",
+     "structure": ["rounded wooden cabinet", "large round speaker grille with concentric rings or simple slots", "two round knobs", "rectangular tuning window with a pointer line"],
+     "must_not": ["text", "tiny details"], "auto_checks": [{"name": "enough_regions", "type": "min_regions", "count": 6}], "visual_checks": ["grille, window and two knobs clearly separate"]},
+    {"id": "teapot", "name": "classic teapot", "status": "TEST",
+     "structure": ["round body", "lid with knob", "curved spout", "loop handle on the opposite side", "simple band decoration"],
+     "must_not": ["steam", "text"], "auto_checks": [{"name": "enough_regions", "type": "min_regions", "count": 5}], "visual_checks": ["spout and handle attach to the body, lid sits on top"]},
+    {"id": "alarm_clock", "name": "twin-bell alarm clock", "status": "DRAFT", "structure": ["round face with 12 hour marks as simple dots", "two hands", "two bells on top with hammer", "two small legs"]},
+    {"id": "table_lamp", "name": "table lamp with pleated shade", "status": "DRAFT", "structure": ["shade", "slim stem", "round base", "pull chain"]},
+    {"id": "mailbox", "name": "rural mailbox", "status": "DRAFT", "structure": ["arched box", "door with latch", "raised flag", "post"]},
+    {"id": "kettle", "name": "stovetop kettle", "status": "DRAFT", "structure": ["body", "lid knob", "spout", "arched handle"]},
+    {"id": "rocking_chair", "name": "rocking chair", "status": "DRAFT", "structure": ["slatted back", "seat", "armrests", "two curved rockers"]},
+    {"id": "bicycle", "name": "classic bicycle", "status": "DRAFT", "structure": ["two wheels", "frame", "handlebars", "saddle", "pedals"]},
+    {"id": "sewing_basket", "name": "sewing basket with spools", "status": "DRAFT", "structure": ["woven basket", "lid", "two spools", "scissors"]},
+    {"id": "record_player", "name": "record player", "status": "DRAFT", "structure": ["box base", "round record", "tone arm", "lid hinge"]},
+    {"id": "camera", "name": "old box camera", "status": "DRAFT", "structure": ["box body", "round lens", "viewfinder", "shutter button"]},
+    {"id": "lantern", "name": "hurricane lantern", "status": "DRAFT", "structure": ["glass globe", "metal cap", "handle", "base"]},
+    {"id": "coffee_grinder", "name": "hand coffee grinder", "status": "DRAFT", "structure": ["wooden box", "drawer", "crank", "top hopper"]},
+    {"id": "watering_can", "name": "watering can", "status": "DRAFT", "structure": ["body", "long spout with rose", "top handle", "side handle"]},
+    {"id": "wall_clock", "name": "pendulum wall clock", "status": "DRAFT", "structure": ["case", "round face", "pendulum", "two weights"]},
+    {"id": "picnic_basket", "name": "picnic basket", "status": "DRAFT", "structure": ["woven basket", "two lids", "handle", "napkin edge"]},
+    {"id": "typewriter", "name": "manual typewriter", "status": "DRAFT", "structure": ["body", "round keys in rows", "paper roller", "paper sheet"]},
+    {"id": "suitcase", "name": "vintage suitcase", "status": "DRAFT", "structure": ["rectangular case", "two clasps", "handle", "corner guards"]},
+    {"id": "umbrella", "name": "classic umbrella", "status": "DRAFT", "structure": ["scalloped canopy with panels", "shaft", "hook handle"]}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "image": "raw_from_chatgpt/CP-001_rotary_telephone_a02.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check)",
+  "verdict": "REVISE",
+  "findings": [
+    {"id": "stray_marks", "severity": "fail", "note": "Two small curved hook lines still stick out above the handset ends (left near x=355,y=437; right near x=790,y=437). Same defect as attempt 1; they belong to no component."},
+    {"id": "margin", "severity": "pass", "note": "Margin fixed: all four sides have clear white space (automated safe_margin PASS)."},
+    {"id": "dial", "severity": "pass", "note": "Counted by eye: ring of 10 holes around a centre disc."},
+    {"id": "handset_cradle_overlap", "severity": "pass", "note": "Handset now clearly sits above the cradle prongs; outlines no longer cross. Cord attaches handset to base."}
+  ]
+}

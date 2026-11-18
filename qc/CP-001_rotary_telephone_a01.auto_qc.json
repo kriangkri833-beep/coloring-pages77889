@@ -1,0 +1,91 @@
+{
+  "image": "raw_from_chatgpt/CP-001_rotary_telephone_a01.png",
+  "pixels": [
+    1086,
+    1448
+  ],
+  "checks": {
+    "no_stray_grey": {
+      "pass": true,
+      "method": "automated",
+      "detail": "stray grey fraction 0.00000"
+    },
+    "white_background": {
+      "pass": true,
+      "method": "automated",
+      "detail": "near-white share of non-ink 0.9881"
+    },
+    "not_cropped": {
+      "pass": true,
+      "method": "automated",
+      "detail": "nearest ink to edge 17px"
+    },
+    "safe_margin": {
+      "pass": false,
+      "method": "automated",
+      "detail": "margins L17 T284 R30 B190 px, need >= 43/58"
+    },
+    "no_tiny_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "0 enclosed regions under 629px (too small to colour / specks)"
+    },
+    "has_colourable_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "32 enclosed regions"
+    },
+    "stroke_thick_enough": {
+      "pass": true,
+      "method": "automated",
+      "detail": "median stroke 16.0px (>= 2.7)"
+    },
+    "stroke_consistent": {
+      "pass": true,
+      "method": "automated",
+      "detail": "0.0% of line is under 50% of median width"
+    },
+    "dial_has_10_holes": {
+      "pass": true,
+      "method": "automated",
+      "detail": "found 10 similar round regions, expected 10 (proxy, counts only)"
+    },
+    "enough_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "32 regions >= 14 expected"
+    }
+  },
+  "metrics": {
+    "ink_fraction": 0.132,
+    "margins_px": [
+      17,
+      284,
+      30,
+      190
+    ],
+    "enclosed_regions": 32,
+    "tiny_regions": 0,
+    "stroke_px": {
+      "median": 16.0,
+      "p10": 12.17,
+      "p90": 18.0,
+      "thin_frac": 0.0
+    }
+  },
+  "passed_all_automated": false,
+  "failed": [
+    "safe_margin"
+  ],
+  "thresholds": {
+    "ink_thresh": 128,
+    "min_margin_frac": 0.04,
+    "edge_touch_px": 2,
+    "max_stray_grey_frac": 0.0005,
+    "bg_white_min": 0.97,
+    "min_region_frac": 0.0004,
+    "thin_line_ratio": 0.5,
+    "max_thin_frac": 0.2,
+    "min_median_stroke_frac": 0.0025
+  }
+}

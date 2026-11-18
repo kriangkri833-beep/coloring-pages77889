@@ -1,0 +1,13 @@
+{
+  "image": "raw_from_chatgpt/CP-001_rotary_telephone_a03.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {"id": "stray_marks", "severity": "pass", "note": "The two hook lines above the handset are gone; handset outline is a clean closed shape."},
+    {"id": "handset_cradle_overlap", "severity": "pass", "note": "Handset sits above the cradle prongs, no crossing outlines."},
+    {"id": "dial", "severity": "pass", "note": "10 holes in a ring around a centre disc (counted by eye)."},
+    {"id": "cord", "severity": "pass", "note": "Coiled cord runs from handset end to the base side without touching the dial."},
+    {"id": "caveat", "severity": "warn", "note": "Overall silhouette is a plausible classic phone but not checked against a reference photo; owner should confirm it matches what buyers expect."}
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "pinholes_filled": 0,
+  "source": "D:\\coloring-pages\\raw_from_chatgpt\\CP-001_lantern_a01.png",
+  "upscale_note": "interpolated enlargement of ~1086x1448 source",
+  "formats": {
+    "US_LETTER": {
+      "png": "D:\\coloring-pages\\pages_final\\US_LETTER\\CP-001_lantern.png",
+      "pdf": "D:\\coloring-pages\\pages_final\\US_LETTER\\CP-001_lantern.pdf",
+      "dims_check": {
+        "pass": true,
+        "method": "automated",
+        "detail": "2550x3300 vs 2550x3300"
+      },
+      "pure_black_white": true,
+      "automated_qc_passed": true,
+      "failed": [],
+      "margins_px": [
+        410,
+        150,
+        410,
+        150
+      ],
+      "min_margin_required_px": 150,
+      "margin_ok": true
+    },
+    "A4": {
+      "png": "D:\\coloring-pages\\pages_final\\A4\\CP-001_lantern.png",
+      "pdf": "D:\\coloring-pages\\pages_final\\A4\\CP-001_lantern.pdf",
+      "dims_check": {
+        "pass": true,
+        "method": "automated",
+        "detail": "2480x3508 vs 2480x3508"
+      },
+      "pure_black_white": true,
+      "automated_qc_passed": true,
+      "failed": [],
+      "margins_px": [
+        315,
+        150,
+        315,
+        150
+      ],
+      "min_margin_required_px": 150,
+      "margin_ok": true
+    }
+  },
+  "stroke_normalised": {
+    "US_LETTER": {
+      "from_px": 50.2,
+      "to_px": 34.0,
+      "note": "normalised",
+      "regions_parts": 14,
+      "ink_components": 1,
+      "topology_preserved": true
+    },
+    "A4": {
+      "from_px": 54.0,
+      "to_px": 34.0,
+      "note": "normalised",
+      "regions_parts": 14,
+      "ink_components": 1,
+      "topology_preserved": true
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "image": "raw_from_chatgpt/CP-001_watering_can_a02.png",
+  "pixels": [
+    1086,
+    1448
+  ],
+  "checks": {
+    "no_stray_grey": {
+      "pass": true,
+      "method": "automated",
+      "detail": "stray grey fraction 0.00000"
+    },
+    "white_background": {
+      "pass": true,
+      "method": "automated",
+      "detail": "near-white share of non-ink 0.9958"
+    },
+    "not_cropped": {
+      "pass": true,
+      "method": "automated",
+      "detail": "nearest ink to edge 175px"
+    },
+    "safe_margin": {
+      "pass": true,
+      "method": "automated",
+      "detail": "margins L175 T438 R198 B445 px, need >= 43/58"
+    },
+    "no_tiny_regions": {
+      "pass": false,
+      "method": "automated",
+      "detail": "3 enclosed regions under 629px (too small to colour / specks)"
+    },
+    "has_colourable_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "13 enclosed regions"
+    },
+    "stroke_thick_enough": {
+      "pass": true,
+      "method": "automated",
+      "detail": "median stroke 10.0px (>= 2.7)"
+    },
+    "stroke_consistent": {
+      "pass": true,
+      "method": "automated",
+      "detail": "0.0% of line is under 50% of median width"
+    },
+    "enough_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "10 regions >= 4 expected"
+    }
+  },
+  "metrics": {
+    "ink_fraction": 0.029,
+    "margins_px": [
+      175,
+      438,
+      198,
+      445
+    ],
+    "enclosed_regions": 13,
+    "tiny_regions": 3,
+    "stroke_px": {
+      "median": 10.0,
+      "p10": 8.94,
+      "p90": 10.0,
+      "thin_frac": 0.0
+    }
+  },
+  "passed_all_automated": false,
+  "failed": [
+    "no_tiny_regions"
+  ],
+  "thresholds": {
+    "ink_thresh": 128,
+    "min_margin_frac": 0.04,
+    "edge_touch_px": 2,
+    "max_stray_grey_frac": 0.0005,
+    "bg_white_min": 0.97,
+    "min_region_frac": 0.0004,
+    "thin_line_ratio": 0.5,
+    "max_thin_frac": 0.2,
+    "min_median_stroke_frac": 0.0025
+  }
+}

@@ -1,6 +1,7 @@
 {
   "product_id": "CP-001",
   "object_id": "vintage_radio",
+  "name": "vintage tabletop radio",
   "status": "QC_PASSED_PENDING_OWNER",
   "human_approved": false,
   "attempts": [
@@ -11,38 +12,60 @@
       "auto_failed": [
         "safe_margin"
       ],
-      "visual": "REVISE (double cabinet outline merging, distorted outer speaker ring)",
-      "outcome": "retry"
+      "visual_verdict": "REVISE",
+      "visual_warnings": [],
+      "accepted": false
     },
     {
       "n": 2,
       "file": "raw_from_chatgpt/CP-001_vintage_radio_a02.png",
       "sha256_16": "7f42f7166be8d35a",
       "auto_failed": [],
-      "visual": "PASS (subjective; rings slightly oval)",
-      "outcome": "accepted_for_owner_review"
+      "visual_verdict": "PASS",
+      "visual_warnings": [
+        "Rings are slightly taller than wide (oval), not perfect circles; acceptable for a hand-drawn look but not exactly what was asked."
+      ],
+      "accepted": true
     }
   ],
   "retry_budget": {
     "used": 2,
     "max": 4
   },
-  "outputs": {
+  "print": {
     "US_LETTER": {
       "png": "pages_final/US_LETTER/CP-001_vintage_radio.png",
-      "pdf": "pages_final/US_LETTER/CP-001_vintage_radio.pdf",
-      "pixels": "2550x3300",
-      "dims_check": "PASS"
+      "dims_check": "2550x3300 vs 2550x3300",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 42.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 9,
+        "ink_components": 7,
+        "topology_preserved": true
+      }
     },
     "A4": {
       "png": "pages_final/A4/CP-001_vintage_radio.png",
-      "pdf": "pages_final/A4/CP-001_vintage_radio.pdf",
-      "pixels": "2480x3508",
-      "dims_check": "PASS"
+      "dims_check": "2480x3508 vs 2480x3508",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 40.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 9,
+        "ink_components": 7,
+        "topology_preserved": true
+      }
     }
   },
-  "caveats": [
-    "Source ~1100x1430 px, print files are interpolated enlargements.",
-    "Geometry verdicts are subjective visual judgment by Claude; owner approves."
-  ]
+  "pinholes_filled": 0,
+  "caveat": "Interpolated enlargement of ~1100x1450 source; geometry verdicts are subjective visual judgment."
 }

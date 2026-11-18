@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_picnic_basket_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Banded basket, two lids, arched handle, napkin hanging over the rim; recognisable, no stray lines, no fills."
+    },
+    {
+      "id": "overlap",
+      "severity": "warn",
+      "note": "Napkin overlaps the basket rim and lid edges, and the handle ends are hidden behind the lids; reads correctly but is the busiest join in the set."
+    }
+  ]
+}

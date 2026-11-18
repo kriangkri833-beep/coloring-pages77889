@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_watering_can_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "REVISE",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "fail",
+      "note": "Sprinkler holes too small; drawing too wide for page."
+    },
+    {
+      "id": "rose_holes",
+      "severity": "fail",
+      "note": "Sprinkler rose has 9 tiny holes that cannot be coloured; draw the rose as a plain flat disc with at most 3 large round holes."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "image": "raw_from_chatgpt/CP-001_wall_clock_a03.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Arched case, face with 4 hollow hour circles and two outlined hands, pendulum rod and disc, two weights on rods; uniform bold line weight."
+    },
+    {
+      "id": "weights_outside",
+      "severity": "warn",
+      "note": "Both weights hang below the case rather than inside it."
+    },
+    {
+      "id": "hands",
+      "severity": "warn",
+      "note": "Hands are slim outlined bars with narrow interiors."
+    },
+    {
+      "id": "face_case_join",
+      "severity": "warn",
+      "note": "Face outline merges into the case sides at the lower left and right."
+    }
+  ]
+}

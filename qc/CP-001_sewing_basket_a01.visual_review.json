@@ -1,0 +1,23 @@
+{
+  "image": "raw_from_chatgpt/CP-001_sewing_basket_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "REVISE",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "fail",
+      "note": "Objects overlap the basket and lid."
+    },
+    {
+      "id": "overlap_items",
+      "severity": "fail",
+      "note": "Spools and scissors overlap the basket rim and lid."
+    },
+    {
+      "id": "spool_tiny",
+      "severity": "fail",
+      "note": "Tiny ellipse on top of each spool is too small to colour."
+    }
+  ]
+}

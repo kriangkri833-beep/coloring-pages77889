@@ -1,5 +1,26 @@
 # Handoff log (newest on top)
 
+## 2026-11-19 (later) - all 20 pages generated, QC'd and printed
+Result: 20 objects, 32 generations, 12 retries, 11 of 20 passed first time. Every object has Letter + A4 PNG/PDF
+(40 files, all pixel-verified) and two combined PDFs: pages_final/CP-001_US_LETTER_20_pages.pdf and ..._A4_20_pages.pdf.
+Nothing is published; only the telephone is owner-approved. The other 19 are QC-passed, waiting for owner review.
+
+What changed in the tools (all tested on this run):
+- Prompt template v2.1 in specs/CP-001.json (lessons from every failure so far). Retry loop: tools/make_prompt.py, tools/record.py, tools/diagnose.py.
+- tools/save_clipboard.py refuses an identical image (it caught a stale clipboard once; a bogus "mailbox" file I had saved by mistake was deleted).
+- make_print.py: line weight normalised to the master (34 px at 300 DPI) so the collection looks uniform; a topology guard
+  (count of enclosed parts before/after) because my first normalisation silently erased the wall clock's hands and hour marks.
+  It was caught only by looking at the contact sheet, not by the checks. Pinholes of 1-4 px are filled and logged.
+- tools/build_collection.py: manifests, collection-level stroke QC, combined PDFs.
+
+Open items / honest caveats (owner to judge):
+- Visual verdicts are Claude's subjective judgment. Warnings are listed per object in manifests/*.json (visual_warnings).
+  Weakest: bicycle (frame crosses wheels), lantern (complex double-line frame), picnic basket (napkin overlaps rim),
+  record player (oval record), wall clock (slim hands, weights hang outside the case).
+- watering_can a03: raw margin check failed (39 px) and was waived because print stage enforces 0.5 in; recorded in its review.
+- Draft object list 4-20 was mine, not market-researched. Source images ~1100x1450 px; prints are enlargements.
+- Etsy listing.json adapter not built; nothing sent to Etsy. API route still untested.
+
 ## 2026-11-19 - telephone approved, 3-image test complete
 - Owner approved the rotary telephone as style master (manifest: human_approved=true).
 - Radio: a01 failed (margin; double cabinet outline; distorted speaker ring), a02 passed. 2 attempts.

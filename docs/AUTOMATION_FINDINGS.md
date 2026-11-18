@@ -48,3 +48,9 @@ Known weakness found in testing: the hole-count proxy gave a false positive (11 
 - a02: automated pass after tuning, visual REVISE (stray hook lines).
 - a03: automated pass, visual PASS (subjective). Print files built for Letter and A4 and pixel-verified.
 - Retry budget used 3 of 4. Not an approved master: owner has not signed off.
+
+## Full run result (20 objects, 2026-11-19)
+- Browser route held up for 32 generations in a row (new chat per object, retries in the same chat). Failure modes seen: one Enter key that did not send (fixed by a send-button fallback), one tool call that hung when a wait loop exceeded the 45 s tool limit (waits are now <=35 s), image generation sometimes taking >60 s, and one stale-clipboard near miss (now blocked by a hash check).
+- Retries: 12 of 32 generations. 11 of 20 objects passed first time. Causes of failure: margin too tight (5), overlapping or merged parts (5), tiny regions/holes/chain links (3), solid black fills (1), hairline inner details (1).
+- Automated checks catch margins, tiny regions, grey, fills of the page, stroke width and part counts. They did NOT catch: overlaps and merged outlines, the stray hook lines, or erased parts after my own line-weight step. Those were found only by looking at the images.
+- Prompt template v2 (numeric size limit, explicit bans) cut margin failures sharply (v1 prompts: 3 of 3 objects needed a margin retry; v2: 2 of 17).

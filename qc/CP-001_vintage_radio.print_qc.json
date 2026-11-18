@@ -1,5 +1,6 @@
 {
-  "source": "raw_from_chatgpt\\CP-001_vintage_radio_a02.png",
+  "pinholes_filled": 0,
+  "source": "D:\\coloring-pages\\raw_from_chatgpt\\CP-001_vintage_radio_a02.png",
   "upscale_note": "interpolated enlargement of ~1086x1448 source",
   "formats": {
     "US_LETTER": {
@@ -41,6 +42,24 @@
       ],
       "min_margin_required_px": 150,
       "margin_ok": true
+    }
+  },
+  "stroke_normalised": {
+    "US_LETTER": {
+      "from_px": 42.0,
+      "to_px": 34.0,
+      "note": "normalised",
+      "regions_parts": 9,
+      "ink_components": 7,
+      "topology_preserved": true
+    },
+    "A4": {
+      "from_px": 40.0,
+      "to_px": 34.0,
+      "note": "normalised",
+      "regions_parts": 9,
+      "ink_components": 7,
+      "topology_preserved": true
     }
   }
 }

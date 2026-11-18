@@ -1,0 +1,69 @@
+{
+  "product_id": "CP-001",
+  "object_id": "bicycle",
+  "name": "classic bicycle",
+  "status": "QC_PASSED_PENDING_OWNER",
+  "human_approved": false,
+  "attempts": [
+    {
+      "n": 1,
+      "file": "raw_from_chatgpt/CP-001_bicycle_a01.png",
+      "sha256_16": "dc8b878f2b4b8117",
+      "auto_failed": [],
+      "visual_verdict": "REVISE",
+      "visual_warnings": [],
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "file": "raw_from_chatgpt/CP-001_bicycle_a02.png",
+      "sha256_16": "5d79cf75f3d9f9d7",
+      "auto_failed": [],
+      "visual_verdict": "PASS",
+      "visual_warnings": [
+        "Frame and fork lines still cross the wheel outlines near the hubs (inherent in a side-view bicycle) and one narrow wedge remains inside the rear triangle. Owner should judge."
+      ],
+      "accepted": true
+    }
+  ],
+  "retry_budget": {
+    "used": 2,
+    "max": 4
+  },
+  "print": {
+    "US_LETTER": {
+      "png": "pages_final/US_LETTER/CP-001_bicycle.png",
+      "dims_check": "2550x3300 vs 2550x3300",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 36.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 13,
+        "ink_components": 1,
+        "topology_preserved": true
+      }
+    },
+    "A4": {
+      "png": "pages_final/A4/CP-001_bicycle.png",
+      "dims_check": "2480x3508 vs 2480x3508",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 35.0,
+        "to_px": 35.0,
+        "note": "unchanged",
+        "regions_parts": 13,
+        "ink_components": 1,
+        "topology_preserved": true
+      }
+    }
+  },
+  "pinholes_filled": 0,
+  "caveat": "Interpolated enlargement of ~1100x1450 source; geometry verdicts are subjective visual judgment."
+}

@@ -1,0 +1,71 @@
+{
+  "product_id": "CP-001",
+  "object_id": "mailbox",
+  "name": "rural mailbox",
+  "status": "QC_PASSED_PENDING_OWNER",
+  "human_approved": false,
+  "attempts": [
+    {
+      "n": 1,
+      "file": "raw_from_chatgpt/CP-001_mailbox_a01.png",
+      "sha256_16": "5b27f4c2563f6293",
+      "auto_failed": [
+        "no_tiny_regions"
+      ],
+      "visual_verdict": "REVISE",
+      "visual_warnings": [],
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "file": "raw_from_chatgpt/CP-001_mailbox_a02.png",
+      "sha256_16": "ee95b6f9556c3ba9",
+      "auto_failed": [],
+      "visual_verdict": "PASS",
+      "visual_warnings": [
+        "Flag arm interrupts the top edge of the box (reads as in front); simple but acceptable."
+      ],
+      "accepted": true
+    }
+  ],
+  "retry_budget": {
+    "used": 2,
+    "max": 4
+  },
+  "print": {
+    "US_LETTER": {
+      "png": "pages_final/US_LETTER/CP-001_mailbox.png",
+      "dims_check": "2550x3300 vs 2550x3300",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 70.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 5,
+        "ink_components": 2,
+        "topology_preserved": true
+      }
+    },
+    "A4": {
+      "png": "pages_final/A4/CP-001_mailbox.png",
+      "dims_check": "2480x3508 vs 2480x3508",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 68.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 5,
+        "ink_components": 2,
+        "topology_preserved": true
+      }
+    }
+  },
+  "pinholes_filled": 0,
+  "caveat": "Interpolated enlargement of ~1100x1450 source; geometry verdicts are subjective visual judgment."
+}

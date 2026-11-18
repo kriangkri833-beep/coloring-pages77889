@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_bicycle_a02.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Two round wheels with hubs, frame, handlebars, saddle, pedals; recognisable."
+    },
+    {
+      "id": "frame_crossing",
+      "severity": "warn",
+      "note": "Frame and fork lines still cross the wheel outlines near the hubs (inherent in a side-view bicycle) and one narrow wedge remains inside the rear triangle. Owner should judge."
+    }
+  ]
+}

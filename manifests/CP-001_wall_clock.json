@@ -1,0 +1,84 @@
+{
+  "product_id": "CP-001",
+  "object_id": "wall_clock",
+  "name": "pendulum wall clock",
+  "status": "QC_PASSED_PENDING_OWNER",
+  "human_approved": false,
+  "attempts": [
+    {
+      "n": 1,
+      "file": "raw_from_chatgpt/CP-001_wall_clock_a01.png",
+      "sha256_16": "e4a4d233e859fb3d",
+      "auto_failed": [
+        "no_tiny_regions"
+      ],
+      "visual_verdict": "REVISE",
+      "visual_warnings": [],
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "file": "raw_from_chatgpt/CP-001_wall_clock_a02.png",
+      "sha256_16": "627457af8e7e362f",
+      "auto_failed": [],
+      "visual_verdict": "PASS",
+      "visual_warnings": [
+        "Clock hands and weight rods are slim; interiors are narrow for colouring. Face outline slightly wobbly."
+      ],
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "file": "raw_from_chatgpt/CP-001_wall_clock_a03.png",
+      "sha256_16": "152ab31e63e26e89",
+      "auto_failed": [],
+      "visual_verdict": "PASS",
+      "visual_warnings": [
+        "Both weights hang below the case rather than inside it.",
+        "Hands are slim outlined bars with narrow interiors.",
+        "Face outline merges into the case sides at the lower left and right."
+      ],
+      "accepted": true
+    }
+  ],
+  "retry_budget": {
+    "used": 3,
+    "max": 4
+  },
+  "print": {
+    "US_LETTER": {
+      "png": "pages_final/US_LETTER/CP-001_wall_clock.png",
+      "dims_check": "2550x3300 vs 2550x3300",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 66.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 16,
+        "ink_components": 7,
+        "topology_preserved": true
+      }
+    },
+    "A4": {
+      "png": "pages_final/A4/CP-001_wall_clock.png",
+      "dims_check": "2480x3508 vs 2480x3508",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 72.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 16,
+        "ink_components": 7,
+        "topology_preserved": true
+      }
+    }
+  },
+  "pinholes_filled": 0,
+  "caveat": "Interpolated enlargement of ~1100x1450 source; geometry verdicts are subjective visual judgment."
+}

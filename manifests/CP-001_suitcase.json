@@ -1,0 +1,60 @@
+{
+  "product_id": "CP-001",
+  "object_id": "suitcase",
+  "name": "vintage suitcase",
+  "status": "QC_PASSED_PENDING_OWNER",
+  "human_approved": false,
+  "attempts": [
+    {
+      "n": 1,
+      "file": "raw_from_chatgpt/CP-001_suitcase_a01.png",
+      "sha256_16": "3b02573a8cacf6d2",
+      "auto_failed": [],
+      "visual_verdict": "PASS",
+      "visual_warnings": [
+        "Corner rivets and the slots inside the clasps are small to colour (above the automated minimum)."
+      ],
+      "accepted": true
+    }
+  ],
+  "retry_budget": {
+    "used": 1,
+    "max": 4
+  },
+  "print": {
+    "US_LETTER": {
+      "png": "pages_final/US_LETTER/CP-001_suitcase.png",
+      "dims_check": "2550x3300 vs 2550x3300",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 48.0,
+        "to_px": 33.5,
+        "note": "normalised",
+        "regions_parts": 20,
+        "ink_components": 7,
+        "topology_preserved": true
+      }
+    },
+    "A4": {
+      "png": "pages_final/A4/CP-001_suitcase.png",
+      "dims_check": "2480x3508 vs 2480x3508",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 46.0,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 20,
+        "ink_components": 7,
+        "topology_preserved": true
+      }
+    }
+  },
+  "pinholes_filled": 0,
+  "caveat": "Interpolated enlargement of ~1100x1450 source; geometry verdicts are subjective visual judgment."
+}

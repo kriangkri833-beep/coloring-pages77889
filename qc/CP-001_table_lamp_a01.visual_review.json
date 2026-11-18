@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_table_lamp_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Shade, stem, round base and pull chain all present and separate; clean lines."
+    },
+    {
+      "id": "pleat_lines",
+      "severity": "warn",
+      "note": "Pleat lines run through the thin band at the top rim of the shade; minor."
+    }
+  ]
+}

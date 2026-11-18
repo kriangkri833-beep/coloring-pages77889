@@ -1,0 +1,23 @@
+{
+  "image": "raw_from_chatgpt/CP-001_bicycle_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "REVISE",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "fail",
+      "note": "Frame crosses wheels, forming narrow slivers."
+    },
+    {
+      "id": "frame_crosses_wheels",
+      "severity": "fail",
+      "note": "Each wheel must be one complete clean circle with a small round hub at its centre; the frame, fork and rear stays may only touch a wheel at its hub, and no frame line may cross a wheel outline."
+    },
+    {
+      "id": "narrow_slivers",
+      "severity": "fail",
+      "note": "Avoid narrow wedge-shaped gaps between frame and wheel; every enclosed area must be wide enough to colour."
+    }
+  ]
+}

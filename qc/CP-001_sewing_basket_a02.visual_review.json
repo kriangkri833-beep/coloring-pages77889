@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_sewing_basket_a02.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Closed domed lid with knob, banded basket body, two spools and scissors standing separately; no overlaps."
+    },
+    {
+      "id": "auto_raw",
+      "severity": "warn",
+      "note": "Raw automated check failed on a single 1-px pinhole near the scissors pivot (invisible); repaired in make_print (pinholes_filled=1) and final print QC passed."
+    }
+  ]
+}

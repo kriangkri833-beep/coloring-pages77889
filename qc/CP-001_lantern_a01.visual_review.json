@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_lantern_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Globe, cap, handle, base all present and recognisable; no stray lines; bands wide enough to colour."
+    },
+    {
+      "id": "complexity",
+      "severity": "warn",
+      "note": "Handle and guard frame are drawn as double-line bands and cross the cap/base at the joints; more complex than the other pages for a Bold & Easy book. Owner may prefer to replace it."
+    }
+  ]
+}

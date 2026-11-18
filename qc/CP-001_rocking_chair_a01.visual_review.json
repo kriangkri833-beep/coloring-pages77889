@@ -1,0 +1,23 @@
+{
+  "image": "raw_from_chatgpt/CP-001_rocking_chair_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "REVISE",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "fail",
+      "note": "Back and armrest geometry overlaps; slats are narrow."
+    },
+    {
+      "id": "armrest_through_back",
+      "severity": "fail",
+      "note": "The armrest must be ONE separate bar attached only to a front post; it must not pass through or overlap the backrest."
+    },
+    {
+      "id": "extra_slats",
+      "severity": "fail",
+      "note": "There must be exactly one set of 4 wide slats in the backrest and no slats below the armrest; make the slat gaps wide enough to colour."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "image": "raw_from_chatgpt/CP-001_alarm_clock_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Round face with 4 hour circles, two hands, two bells, centre top button instead of a hammer (acceptable), two legs; all separate, no stray lines."
+    }
+  ]
+}

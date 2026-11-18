@@ -1,0 +1,28 @@
+{
+  "image": "raw_from_chatgpt/CP-001_mailbox_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "REVISE",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "fail",
+      "note": "Door and body geometry confused."
+    },
+    {
+      "id": "nested_door",
+      "severity": "fail",
+      "note": "Draw the door as ONE single arch outline only; the door currently has a second nested arch inside a frame arch."
+    },
+    {
+      "id": "latch_overlap",
+      "severity": "fail",
+      "note": "The latch bar must sit fully inside or fully outside the door edge, with no outline crossing the door outline."
+    },
+    {
+      "id": "flag_pivot_dot",
+      "severity": "fail",
+      "note": "Remove the tiny dot inside the circular flag pivot; the pivot must be a plain empty circle."
+    }
+  ]
+}

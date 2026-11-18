@@ -1,0 +1,28 @@
+{
+  "image": "raw_from_chatgpt/CP-001_wall_clock_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "REVISE",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "fail",
+      "note": "Black fills, open-line hands and tiny chain links."
+    },
+    {
+      "id": "black_fills",
+      "severity": "fail",
+      "note": "Hour marks are solid black dots; draw them as hollow circles (outline only, empty inside)."
+    },
+    {
+      "id": "open_hands",
+      "severity": "fail",
+      "note": "Clock hands are single lines; draw them as two closed slim bar shapes that can be coloured."
+    },
+    {
+      "id": "chain_links",
+      "severity": "fail",
+      "note": "Chains are tiny rings; draw each chain as one plain straight bar or rod with no links."
+    }
+  ]
+}

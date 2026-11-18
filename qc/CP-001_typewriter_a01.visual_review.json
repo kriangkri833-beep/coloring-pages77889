@@ -1,0 +1,13 @@
+{
+  "image": "raw_from_chatgpt/CP-001_typewriter_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Body, two rows of 5 large round keys, platen roller with side knobs, standing paper sheet, two feet; clean, no text, no fills."
+    }
+  ]
+}

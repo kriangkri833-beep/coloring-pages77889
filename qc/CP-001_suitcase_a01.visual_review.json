@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_suitcase_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Case, two clasps, handle, four corner guards; clean, no text."
+    },
+    {
+      "id": "small_parts",
+      "severity": "warn",
+      "note": "Corner rivets and the slots inside the clasps are small to colour (above the automated minimum)."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 {
-  "source": "raw_from_chatgpt\\CP-001_teapot_a02.png",
+  "pinholes_filled": 0,
+  "source": "D:\\coloring-pages\\raw_from_chatgpt\\CP-001_teapot_a02.png",
   "upscale_note": "interpolated enlargement of ~1086x1448 source",
   "formats": {
     "US_LETTER": {
@@ -41,6 +42,24 @@
       ],
       "min_margin_required_px": 150,
       "margin_ok": true
+    }
+  },
+  "stroke_normalised": {
+    "US_LETTER": {
+      "from_px": 36.7,
+      "to_px": 34.9,
+      "note": "normalised",
+      "regions_parts": 11,
+      "ink_components": 1,
+      "topology_preserved": true
+    },
+    "A4": {
+      "from_px": 35.8,
+      "to_px": 34.0,
+      "note": "normalised",
+      "regions_parts": 11,
+      "ink_components": 1,
+      "topology_preserved": true
     }
   }
 }

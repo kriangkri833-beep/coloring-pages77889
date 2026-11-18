@@ -1,0 +1,13 @@
+{
+  "image": "raw_from_chatgpt/CP-001_kettle_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Body, lid with knob, spout, arched handle with two hinge pieces all present and separate; no stray lines."
+    }
+  ]
+}

@@ -15,4 +15,9 @@ im = ImageGrab.grabclipboard()
 if im is None or not hasattr(im, "save"):
     raise SystemExit("No image on clipboard")
 im.save(dest, "PNG")
+h = hashlib.sha256(dest.read_bytes()).hexdigest()
+for other in dest.parent.glob("*.png"):
+    if other != dest and hashlib.sha256(other.read_bytes()).hexdigest() == h:
+        dest.unlink()
+        raise SystemExit(f"REFUSED: clipboard image is identical to {other.name} (stale clipboard?). Nothing saved.")
 print(dest, im.size, im.mode, hashlib.sha256(dest.read_bytes()).hexdigest()[:16])

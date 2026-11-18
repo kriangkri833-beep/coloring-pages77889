@@ -1,0 +1,189 @@
+{
+  "method": "automated",
+  "median_of_medians_px": 34.0,
+  "outlier_rule": "median stroke differs from collection median by >35%",
+  "pages": [
+    {
+      "object": "rotary_telephone",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.1223,
+      "object_width_frac": 0.882,
+      "attempts": 3,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "vintage_radio",
+      "median_stroke_px": 36.0,
+      "ink_fraction": 0.0777,
+      "object_width_frac": 0.882,
+      "attempts": 2,
+      "stroke_vs_median": 1.06,
+      "stroke_outlier": false
+    },
+    {
+      "object": "teapot",
+      "median_stroke_px": 34.9,
+      "ink_fraction": 0.0635,
+      "object_width_frac": 0.882,
+      "attempts": 2,
+      "stroke_vs_median": 1.03,
+      "stroke_outlier": false
+    },
+    {
+      "object": "alarm_clock",
+      "median_stroke_px": 34.9,
+      "ink_fraction": 0.1042,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.03,
+      "stroke_outlier": false
+    },
+    {
+      "object": "table_lamp",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0776,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "mailbox",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0602,
+      "object_width_frac": 0.882,
+      "attempts": 2,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "kettle",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0622,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "rocking_chair",
+      "median_stroke_px": 34.2,
+      "ink_fraction": 0.0949,
+      "object_width_frac": 0.882,
+      "attempts": 2,
+      "stroke_vs_median": 1.01,
+      "stroke_outlier": false
+    },
+    {
+      "object": "bicycle",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0672,
+      "object_width_frac": 0.882,
+      "attempts": 2,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "sewing_basket",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0918,
+      "object_width_frac": 0.882,
+      "attempts": 2,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "record_player",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.1151,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "camera",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0794,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "lantern",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0986,
+      "object_width_frac": 0.678,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "coffee_grinder",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0927,
+      "object_width_frac": 0.842,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "watering_can",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0587,
+      "object_width_frac": 0.882,
+      "attempts": 3,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "wall_clock",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0831,
+      "object_width_frac": 0.631,
+      "attempts": 3,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "picnic_basket",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0779,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "typewriter",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.1007,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "suitcase",
+      "median_stroke_px": 34.0,
+      "ink_fraction": 0.0724,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 1.0,
+      "stroke_outlier": false
+    },
+    {
+      "object": "umbrella",
+      "median_stroke_px": 32.8,
+      "ink_fraction": 0.0563,
+      "object_width_frac": 0.882,
+      "attempts": 1,
+      "stroke_vs_median": 0.96,
+      "stroke_outlier": false
+    }
+  ],
+  "outliers": [],
+  "note": "Stroke is measured on Letter prints where each object is scaled to fit its own box, so stroke differs with object size; large differences mean visibly different line weight on the page."
+}

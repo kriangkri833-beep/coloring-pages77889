@@ -2,8 +2,11 @@
   "product_id": "CP-001",
   "title": "Nostalgic Everyday Treasures",
   "concept": "20 Bold & Easy printable coloring pages for adults & seniors",
-  "status": "STYLE_PROOF",
-  "formats": ["US_LETTER", "A4"],
+  "status": "ALL_20_GENERATED_PENDING_OWNER_REVIEW",
+  "formats": [
+    "US_LETTER",
+    "A4"
+  ],
   "target_dpi": 300,
   "style_rules": [
     "bold clean black outlines of uniform thickness",
@@ -19,53 +22,475 @@
     "on_exhausted": "ESCALATE_TO_OWNER (never auto-accept)",
     "max_total_attempts_before_pause": 40
   },
-  "pipeline": ["generate", "retrieve", "auto_qc", "visual_review", "diagnose", "retry_or_accept", "save", "next"],
-  "objects_note": "Objects 4-20 are a DRAFT scene list for owner approval, not yet researched against Etsy competitors.",
+  "pipeline": [
+    "generate",
+    "retrieve",
+    "auto_qc",
+    "visual_review",
+    "diagnose",
+    "retry_or_accept",
+    "save",
+    "next"
+  ],
+  "objects_note": "Objects 4-20 are a DRAFT scene list. Owner said go on 2026-11-19; not market-researched.",
   "objects": [
     {
       "id": "rotary_telephone",
       "name": "vintage rotary telephone",
-      "status": "POC",
+      "status": "MASTER_APPROVED",
       "structure": [
         "rounded rectangular base with two small feet",
         "circular rotary dial on the front: exactly 10 finger holes in a ring, plus a centre disc",
         "handset lying across the top of the base in a cradle, curved earpiece and mouthpiece ends",
         "coiled cord running from the handset to the base"
       ],
-      "must_not": ["parts overlapping or merging", "handset floating off the cradle", "extra buttons", "text or numbers"],
+      "must_not": [
+        "parts overlapping or merging",
+        "handset floating off the cradle",
+        "extra buttons",
+        "text or numbers"
+      ],
       "auto_checks": [
-        {"name": "dial_has_10_holes", "type": "similar_round_regions", "count": 10, "area_frac": [0.0004, 0.004], "min_circularity": 0.88, "tuning_note": "raised from 0.75 on 2026-11-18 after attempt a02 gave 11 (false positive: oval non-hole region); real holes measure 0.92-0.95"},
-        {"name": "enough_regions", "type": "min_regions", "count": 14}
+        {
+          "name": "dial_has_10_holes",
+          "type": "similar_round_regions",
+          "count": 10,
+          "area_frac": [
+            0.0004,
+            0.004
+          ],
+          "min_circularity": 0.88,
+          "tuning_note": "raised from 0.75 on 2026-11-18 after attempt a02 gave 11 (false positive: oval non-hole region); real holes measure 0.92-0.95"
+        },
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 14
+        }
       ],
       "visual_checks": [
         "dial has a ring of 10 holes around a centre disc",
         "handset sits in the cradle on top, two ends distinguishable",
         "cord attaches from handset to base without crossing the dial",
         "no part merges into another"
-      ]
+      ],
+      "view": "front view",
+      "accepted_attempt": "a03"
     },
-    {"id": "vintage_radio", "name": "vintage tabletop radio", "status": "TEST",
-     "structure": ["rounded wooden cabinet", "large round speaker grille with concentric rings or simple slots", "two round knobs", "rectangular tuning window with a pointer line"],
-     "must_not": ["text", "tiny details"], "auto_checks": [{"name": "enough_regions", "type": "min_regions", "count": 6}], "visual_checks": ["grille, window and two knobs clearly separate"]},
-    {"id": "teapot", "name": "classic teapot", "status": "TEST",
-     "structure": ["round body", "lid with knob", "curved spout", "loop handle on the opposite side", "simple band decoration"],
-     "must_not": ["steam", "text"], "auto_checks": [{"name": "enough_regions", "type": "min_regions", "count": 5}], "visual_checks": ["spout and handle attach to the body, lid sits on top"]},
-    {"id": "alarm_clock", "name": "twin-bell alarm clock", "status": "DRAFT", "structure": ["round face with 12 hour marks as simple dots", "two hands", "two bells on top with hammer", "two small legs"]},
-    {"id": "table_lamp", "name": "table lamp with pleated shade", "status": "DRAFT", "structure": ["shade", "slim stem", "round base", "pull chain"]},
-    {"id": "mailbox", "name": "rural mailbox", "status": "DRAFT", "structure": ["arched box", "door with latch", "raised flag", "post"]},
-    {"id": "kettle", "name": "stovetop kettle", "status": "DRAFT", "structure": ["body", "lid knob", "spout", "arched handle"]},
-    {"id": "rocking_chair", "name": "rocking chair", "status": "DRAFT", "structure": ["slatted back", "seat", "armrests", "two curved rockers"]},
-    {"id": "bicycle", "name": "classic bicycle", "status": "DRAFT", "structure": ["two wheels", "frame", "handlebars", "saddle", "pedals"]},
-    {"id": "sewing_basket", "name": "sewing basket with spools", "status": "DRAFT", "structure": ["woven basket", "lid", "two spools", "scissors"]},
-    {"id": "record_player", "name": "record player", "status": "DRAFT", "structure": ["box base", "round record", "tone arm", "lid hinge"]},
-    {"id": "camera", "name": "old box camera", "status": "DRAFT", "structure": ["box body", "round lens", "viewfinder", "shutter button"]},
-    {"id": "lantern", "name": "hurricane lantern", "status": "DRAFT", "structure": ["glass globe", "metal cap", "handle", "base"]},
-    {"id": "coffee_grinder", "name": "hand coffee grinder", "status": "DRAFT", "structure": ["wooden box", "drawer", "crank", "top hopper"]},
-    {"id": "watering_can", "name": "watering can", "status": "DRAFT", "structure": ["body", "long spout with rose", "top handle", "side handle"]},
-    {"id": "wall_clock", "name": "pendulum wall clock", "status": "DRAFT", "structure": ["case", "round face", "pendulum", "two weights"]},
-    {"id": "picnic_basket", "name": "picnic basket", "status": "DRAFT", "structure": ["woven basket", "two lids", "handle", "napkin edge"]},
-    {"id": "typewriter", "name": "manual typewriter", "status": "DRAFT", "structure": ["body", "round keys in rows", "paper roller", "paper sheet"]},
-    {"id": "suitcase", "name": "vintage suitcase", "status": "DRAFT", "structure": ["rectangular case", "two clasps", "handle", "corner guards"]},
-    {"id": "umbrella", "name": "classic umbrella", "status": "DRAFT", "structure": ["scalloped canopy with panels", "shaft", "hook handle"]}
-  ]
+    {
+      "id": "vintage_radio",
+      "name": "vintage tabletop radio",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "rounded wooden cabinet",
+        "large round speaker grille with concentric rings or simple slots",
+        "two round knobs",
+        "rectangular tuning window with a pointer line"
+      ],
+      "must_not": [
+        "text",
+        "tiny details"
+      ],
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 6
+        }
+      ],
+      "visual_checks": [
+        "grille, window and two knobs clearly separate"
+      ],
+      "view": "front view",
+      "accepted_attempt": "a02"
+    },
+    {
+      "id": "teapot",
+      "name": "classic teapot",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "round body",
+        "lid with knob",
+        "curved spout",
+        "loop handle on the opposite side",
+        "simple band decoration"
+      ],
+      "must_not": [
+        "steam",
+        "text"
+      ],
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 5
+        }
+      ],
+      "visual_checks": [
+        "spout and handle attach to the body, lid sits on top"
+      ],
+      "view": "front view",
+      "accepted_attempt": "a02"
+    },
+    {
+      "id": "alarm_clock",
+      "name": "twin-bell alarm clock",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "round face with 4 large round hour marks at 12, 3, 6 and 9",
+        "two hands",
+        "two bells on top with a hammer between them",
+        "two small legs"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "table_lamp",
+      "name": "table lamp with pleated shade",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "shade",
+        "slim stem",
+        "round base",
+        "pull chain"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "mailbox",
+      "name": "rural mailbox",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "arched box",
+        "door with latch",
+        "raised flag",
+        "post"
+      ],
+      "view": "side view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a02"
+    },
+    {
+      "id": "kettle",
+      "name": "stovetop kettle",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "body",
+        "lid knob",
+        "spout",
+        "arched handle"
+      ],
+      "view": "side view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "rocking_chair",
+      "name": "rocking chair",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "slatted back",
+        "seat",
+        "armrests",
+        "two curved rockers"
+      ],
+      "view": "side view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a02"
+    },
+    {
+      "id": "bicycle",
+      "name": "classic bicycle",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "two plain round wheels with no spokes",
+        "frame",
+        "handlebars",
+        "saddle",
+        "pedals"
+      ],
+      "view": "side view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 5
+        }
+      ],
+      "accepted_attempt": "a02"
+    },
+    {
+      "id": "sewing_basket",
+      "name": "sewing basket with spools",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "basket body with 2 simple wide bands (no weave texture)",
+        "lid",
+        "two spools of thread",
+        "scissors"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a02"
+    },
+    {
+      "id": "record_player",
+      "name": "record player",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "box base",
+        "round record with 2 rings and a centre circle",
+        "tone arm",
+        "lid hinge"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "camera",
+      "name": "old box camera",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "box body",
+        "round lens",
+        "viewfinder",
+        "shutter button"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "lantern",
+      "name": "hurricane lantern",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "glass globe",
+        "metal cap",
+        "handle",
+        "base"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "coffee_grinder",
+      "name": "hand coffee grinder",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "wooden box",
+        "small drawer with a round knob",
+        "crank handle on top",
+        "top hopper"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "watering_can",
+      "name": "watering can",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "body",
+        "long spout with rose",
+        "top handle",
+        "side handle"
+      ],
+      "view": "side view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a03"
+    },
+    {
+      "id": "wall_clock",
+      "name": "pendulum wall clock",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "case",
+        "round face",
+        "pendulum",
+        "two weights"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a03"
+    },
+    {
+      "id": "picnic_basket",
+      "name": "picnic basket",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "basket body with 2 simple wide bands (no weave texture)",
+        "two lids",
+        "handle",
+        "napkin edge peeking out"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "typewriter",
+      "name": "manual typewriter",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "body",
+        "two rows of 5 large round keys",
+        "paper roller across the top",
+        "paper sheet standing up from the roller"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "suitcase",
+      "name": "vintage suitcase",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "rectangular case",
+        "two clasps",
+        "handle",
+        "corner guards"
+      ],
+      "view": "front view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 4
+        }
+      ],
+      "accepted_attempt": "a01"
+    },
+    {
+      "id": "umbrella",
+      "name": "classic umbrella",
+      "status": "QC_PASSED_PENDING_OWNER",
+      "structure": [
+        "scalloped canopy with panels",
+        "shaft",
+        "hook handle"
+      ],
+      "view": "side view",
+      "auto_checks": [
+        {
+          "name": "enough_regions",
+          "type": "min_regions",
+          "count": 3
+        }
+      ],
+      "accepted_attempt": "a01"
+    }
+  ],
+  "prompt_template_v2": {
+    "version": "v2.1 (2026-11-19)",
+    "text": "Create an image: a black-and-white coloring page of {name}, {view}, portrait orientation. Structure: {structure}. Rules: draw every part with ONE single clean outline, never two nested or doubled outlines; separate every part from its neighbours with white space except where two parts physically attach; no outlines crossing through each other; circles and rings must be neat, round and even; no stray lines, tick marks, hooks, dots or flourishes; no solid black fills anywhere (everything is an outline with white inside); no tiny holes, tiny rings, chain links or thin hairlines; no text or numbers. Style: bold, thick clean black outlines of one uniform thickness (every part uses the same line weight) on a pure white background, no grey, no shading, no gradients, no hatching, large simple enclosed areas that are easy for seniors to colour. Composition: the whole object centred on the page, fitting inside 70% of the page width and 60% of the page height, with a wide empty white margin on all four sides; nothing near any edge.",
+    "retry_text": "Create an image: redo the same black-and-white coloring page, keeping everything else the same. Corrections: {fixes}",
+    "lessons_from": [
+      "20 objects, 2026-11-19 run"
+    ],
+    "lessons": [
+      "margin: use numeric limits (70% width / 60% height) not 8%",
+      "stray hook/tick lines appear near joins: forbid explicitly",
+      "nested/double outlines merge at the sides: forbid, one outline per part",
+      "rings drift to ovals: demand neat round",
+      "wide objects drift to the page edge: numeric width limit",
+      "solid black dots/fills appeared (clock hour marks): demand hollow outlines",
+      "tiny holes/rings/chain links appear on sprinklers and chains: forbid, they cannot be coloured",
+      "inner details come out hairline next to thick case lines: demand one uniform thick weight",
+      "objects drawn inside other objects overlap (basket/spools/scissors): place separately beside each other",
+      "side-view objects with moving parts (bicycle) force lines to cross wheels: expect warnings"
+    ]
+  }
 }

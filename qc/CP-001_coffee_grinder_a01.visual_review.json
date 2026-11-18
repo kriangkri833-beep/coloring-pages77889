@@ -1,0 +1,18 @@
+{
+  "image": "raw_from_chatgpt/CP-001_coffee_grinder_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "pass",
+      "note": "Wooden box with drawer and knob, hopper bowl, crank with handle; separate parts, clean lines."
+    },
+    {
+      "id": "crank_knob",
+      "severity": "warn",
+      "note": "Crank knob and neck are slightly wobbly/misshapen."
+    }
+  ]
+}

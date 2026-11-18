@@ -1,0 +1,23 @@
+{
+  "image": "raw_from_chatgpt/CP-001_watering_can_a02.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "REVISE",
+  "findings": [
+    {
+      "id": "overall",
+      "severity": "fail",
+      "note": "Rose holes still tiny; lines thinner than the rest of the set."
+    },
+    {
+      "id": "rose_holes",
+      "severity": "fail",
+      "note": "Draw the sprinkler rose as a plain flat disc with NO holes at all."
+    },
+    {
+      "id": "line_weight",
+      "severity": "fail",
+      "note": "Lines are thinner than the rest of the collection; use thick bold outlines."
+    }
+  ]
+}

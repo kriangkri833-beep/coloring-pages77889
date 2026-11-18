@@ -1,6 +1,7 @@
 {
   "product_id": "CP-001",
   "object_id": "teapot",
+  "name": "classic teapot",
   "status": "QC_PASSED_PENDING_OWNER",
   "human_approved": false,
   "attempts": [
@@ -11,38 +12,58 @@
       "auto_failed": [
         "safe_margin"
       ],
-      "visual": "structure PASS, margin fail",
-      "outcome": "retry"
+      "visual_verdict": "PASS_STRUCTURE_ONLY",
+      "visual_warnings": [],
+      "accepted": false
     },
     {
       "n": 2,
       "file": "raw_from_chatgpt/CP-001_teapot_a02.png",
       "sha256_16": "8806fc20c7771173",
       "auto_failed": [],
-      "visual": "PASS (subjective)",
-      "outcome": "accepted_for_owner_review"
+      "visual_verdict": "PASS",
+      "visual_warnings": [],
+      "accepted": true
     }
   ],
   "retry_budget": {
     "used": 2,
     "max": 4
   },
-  "outputs": {
+  "print": {
     "US_LETTER": {
       "png": "pages_final/US_LETTER/CP-001_teapot.png",
-      "pdf": "pages_final/US_LETTER/CP-001_teapot.pdf",
-      "pixels": "2550x3300",
-      "dims_check": "PASS"
+      "dims_check": "2550x3300 vs 2550x3300",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 36.7,
+        "to_px": 34.9,
+        "note": "normalised",
+        "regions_parts": 11,
+        "ink_components": 1,
+        "topology_preserved": true
+      }
     },
     "A4": {
       "png": "pages_final/A4/CP-001_teapot.png",
-      "pdf": "pages_final/A4/CP-001_teapot.pdf",
-      "pixels": "2480x3508",
-      "dims_check": "PASS"
+      "dims_check": "2480x3508 vs 2480x3508",
+      "dims_pass": true,
+      "pure_black_white": true,
+      "auto_qc_passed": true,
+      "margin_ok": true,
+      "stroke": {
+        "from_px": 35.8,
+        "to_px": 34.0,
+        "note": "normalised",
+        "regions_parts": 11,
+        "ink_components": 1,
+        "topology_preserved": true
+      }
     }
   },
-  "caveats": [
-    "Source ~1100x1430 px, print files are interpolated enlargements.",
-    "Geometry verdicts are subjective visual judgment by Claude; owner approves."
-  ]
+  "pinholes_filled": 0,
+  "caveat": "Interpolated enlargement of ~1100x1450 source; geometry verdicts are subjective visual judgment."
 }

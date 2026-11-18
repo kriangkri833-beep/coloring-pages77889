@@ -1,0 +1,10 @@
+{
+  "image": "raw_from_chatgpt/CP-001_teapot_a02.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {"id": "structure", "severity": "pass", "note": "Round body, lid with knob, spout, loop handle attached at two points, band and base ring, all separated; no stray lines."},
+    {"id": "margin", "severity": "pass", "note": "Margins now clear on all sides (automated safe_margin PASS)."}
+  ]
+}

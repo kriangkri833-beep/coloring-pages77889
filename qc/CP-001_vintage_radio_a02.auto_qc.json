@@ -1,0 +1,84 @@
+{
+  "image": "raw_from_chatgpt/CP-001_vintage_radio_a02.png",
+  "pixels": [
+    1086,
+    1448
+  ],
+  "checks": {
+    "no_stray_grey": {
+      "pass": true,
+      "method": "automated",
+      "detail": "stray grey fraction 0.00000"
+    },
+    "white_background": {
+      "pass": true,
+      "method": "automated",
+      "detail": "near-white share of non-ink 0.9930"
+    },
+    "not_cropped": {
+      "pass": true,
+      "method": "automated",
+      "detail": "nearest ink to edge 88px"
+    },
+    "safe_margin": {
+      "pass": true,
+      "method": "automated",
+      "detail": "margins L88 T437 R88 B352 px, need >= 43/58"
+    },
+    "no_tiny_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "0 enclosed regions under 629px (too small to colour / specks)"
+    },
+    "has_colourable_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "9 enclosed regions"
+    },
+    "stroke_thick_enough": {
+      "pass": true,
+      "method": "automated",
+      "detail": "median stroke 18.0px (>= 2.7)"
+    },
+    "stroke_consistent": {
+      "pass": true,
+      "method": "automated",
+      "detail": "0.0% of line is under 50% of median width"
+    },
+    "enough_regions": {
+      "pass": true,
+      "method": "automated",
+      "detail": "9 regions >= 6 expected"
+    }
+  },
+  "metrics": {
+    "ink_fraction": 0.0832,
+    "margins_px": [
+      88,
+      437,
+      88,
+      352
+    ],
+    "enclosed_regions": 9,
+    "tiny_regions": 0,
+    "stroke_px": {
+      "median": 18.0,
+      "p10": 16.0,
+      "p90": 18.0,
+      "thin_frac": 0.0
+    }
+  },
+  "passed_all_automated": true,
+  "failed": [],
+  "thresholds": {
+    "ink_thresh": 128,
+    "min_margin_frac": 0.04,
+    "edge_touch_px": 2,
+    "max_stray_grey_frac": 0.0005,
+    "bg_white_min": 0.97,
+    "min_region_frac": 0.0004,
+    "thin_line_ratio": 0.5,
+    "max_thin_frac": 0.2,
+    "min_median_stroke_frac": 0.0025
+  }
+}

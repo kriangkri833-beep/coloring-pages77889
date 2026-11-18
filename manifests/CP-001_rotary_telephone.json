@@ -1,21 +1,60 @@
 {
   "product_id": "CP-001",
   "object_id": "rotary_telephone",
-  "status": "QC_APPROVED_PENDING_OWNER",
-  "note": "Proof of concept only. NOT a master image: owner has not approved it. 1 of 20 objects.",
+  "status": "MASTER_APPROVED",
+  "note": "Approved by owner as the style master for CP-001. Approval is for this image only; 1 of 20 objects.",
   "attempts": [
-    {"n": 1, "file": "raw_from_chatgpt/CP-001_rotary_telephone_a01.png", "sha256_16": "40d61069067fabff", "auto_failed": ["safe_margin"], "visual": "REVISE (stray ticks, handset/cradle overlap)", "outcome": "retry"},
-    {"n": 2, "file": "raw_from_chatgpt/CP-001_rotary_telephone_a02.png", "sha256_16": "2774636a64b9b7f8", "auto_failed": [], "auto_note": "first run failed dial_has_10_holes (11 found, checker false positive); threshold tuned and re-run -> pass", "visual": "REVISE (stray hook lines remain)", "outcome": "retry"},
-    {"n": 3, "file": "raw_from_chatgpt/CP-001_rotary_telephone_a03.png", "sha256_16": "b9f999049ca8ad3c", "auto_failed": [], "visual": "PASS (subjective)", "outcome": "accepted_for_owner_review"}
+    {
+      "n": 1,
+      "file": "raw_from_chatgpt/CP-001_rotary_telephone_a01.png",
+      "sha256_16": "40d61069067fabff",
+      "auto_failed": [
+        "safe_margin"
+      ],
+      "visual": "REVISE (stray ticks, handset/cradle overlap)",
+      "outcome": "retry"
+    },
+    {
+      "n": 2,
+      "file": "raw_from_chatgpt/CP-001_rotary_telephone_a02.png",
+      "sha256_16": "2774636a64b9b7f8",
+      "auto_failed": [],
+      "auto_note": "first run failed dial_has_10_holes (11 found, checker false positive); threshold tuned and re-run -> pass",
+      "visual": "REVISE (stray hook lines remain)",
+      "outcome": "retry"
+    },
+    {
+      "n": 3,
+      "file": "raw_from_chatgpt/CP-001_rotary_telephone_a03.png",
+      "sha256_16": "b9f999049ca8ad3c",
+      "auto_failed": [],
+      "visual": "PASS (subjective)",
+      "outcome": "accepted_for_owner_review"
+    }
   ],
-  "retry_budget": {"used": 3, "max": 4},
+  "retry_budget": {
+    "used": 3,
+    "max": 4
+  },
   "outputs": {
-    "US_LETTER": {"png": "pages_final/US_LETTER/CP-001_rotary_telephone.png", "pdf": "pages_final/US_LETTER/CP-001_rotary_telephone.pdf", "pixels": "2550x3300", "dims_check": "PASS"},
-    "A4": {"png": "pages_final/A4/CP-001_rotary_telephone.png", "pdf": "pages_final/A4/CP-001_rotary_telephone.pdf", "pixels": "2480x3508", "dims_check": "PASS"}
+    "US_LETTER": {
+      "png": "pages_final/US_LETTER/CP-001_rotary_telephone.png",
+      "pdf": "pages_final/US_LETTER/CP-001_rotary_telephone.pdf",
+      "pixels": "2550x3300",
+      "dims_check": "PASS"
+    },
+    "A4": {
+      "png": "pages_final/A4/CP-001_rotary_telephone.png",
+      "pdf": "pages_final/A4/CP-001_rotary_telephone.pdf",
+      "pixels": "2480x3508",
+      "dims_check": "PASS"
+    }
   },
   "caveats": [
     "Source is ~1086x1448 px; print files are interpolated enlargements (~2.3x), not native 300 DPI detail. Line art tolerates this but inspect a physical print.",
     "Structural check is a counting proxy; overlap/geometry verdicts are subjective visual judgment by Claude."
   ],
-  "human_approved": false
+  "human_approved": true,
+  "approved_by": "owner",
+  "approved_on": "2026-11-18"
 }

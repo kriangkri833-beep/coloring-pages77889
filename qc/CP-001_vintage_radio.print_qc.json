@@ -1,0 +1,46 @@
+{
+  "source": "raw_from_chatgpt\\CP-001_vintage_radio_a02.png",
+  "upscale_note": "interpolated enlargement of ~1086x1448 source",
+  "formats": {
+    "US_LETTER": {
+      "png": "D:\\coloring-pages\\pages_final\\US_LETTER\\CP-001_vintage_radio.png",
+      "pdf": "D:\\coloring-pages\\pages_final\\US_LETTER\\CP-001_vintage_radio.pdf",
+      "dims_check": {
+        "pass": true,
+        "method": "automated",
+        "detail": "2550x3300 vs 2550x3300"
+      },
+      "pure_black_white": true,
+      "automated_qc_passed": true,
+      "failed": [],
+      "margins_px": [
+        150,
+        835,
+        150,
+        836
+      ],
+      "min_margin_required_px": 150,
+      "margin_ok": true
+    },
+    "A4": {
+      "png": "D:\\coloring-pages\\pages_final\\A4\\CP-001_vintage_radio.png",
+      "pdf": "D:\\coloring-pages\\pages_final\\A4\\CP-001_vintage_radio.pdf",
+      "dims_check": {
+        "pass": true,
+        "method": "automated",
+        "detail": "2480x3508 vs 2480x3508"
+      },
+      "pure_black_white": true,
+      "automated_qc_passed": true,
+      "failed": [],
+      "margins_px": [
+        150,
+        964,
+        150,
+        965
+      ],
+      "min_margin_required_px": 150,
+      "margin_ok": true
+    }
+  }
+}

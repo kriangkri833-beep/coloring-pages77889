@@ -1,0 +1,11 @@
+{
+  "image": "raw_from_chatgpt/CP-001_vintage_radio_a02.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check). Owner still approves.",
+  "verdict": "PASS",
+  "findings": [
+    {"id": "cabinet_outline", "severity": "pass", "note": "Cabinet is now one single outline; the nested arch is gone."},
+    {"id": "separation", "severity": "pass", "note": "Speaker rings, window, knobs and feet are all separate; no crossing lines."},
+    {"id": "speaker_rings", "severity": "warn", "note": "Rings are slightly taller than wide (oval), not perfect circles; acceptable for a hand-drawn look but not exactly what was asked."}
+  ]
+}

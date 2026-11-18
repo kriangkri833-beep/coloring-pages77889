@@ -1,0 +1,48 @@
+{
+  "product_id": "CP-001",
+  "object_id": "teapot",
+  "status": "QC_PASSED_PENDING_OWNER",
+  "human_approved": false,
+  "attempts": [
+    {
+      "n": 1,
+      "file": "raw_from_chatgpt/CP-001_teapot_a01.png",
+      "sha256_16": "3e73ee7e8fe4a781",
+      "auto_failed": [
+        "safe_margin"
+      ],
+      "visual": "structure PASS, margin fail",
+      "outcome": "retry"
+    },
+    {
+      "n": 2,
+      "file": "raw_from_chatgpt/CP-001_teapot_a02.png",
+      "sha256_16": "8806fc20c7771173",
+      "auto_failed": [],
+      "visual": "PASS (subjective)",
+      "outcome": "accepted_for_owner_review"
+    }
+  ],
+  "retry_budget": {
+    "used": 2,
+    "max": 4
+  },
+  "outputs": {
+    "US_LETTER": {
+      "png": "pages_final/US_LETTER/CP-001_teapot.png",
+      "pdf": "pages_final/US_LETTER/CP-001_teapot.pdf",
+      "pixels": "2550x3300",
+      "dims_check": "PASS"
+    },
+    "A4": {
+      "png": "pages_final/A4/CP-001_teapot.png",
+      "pdf": "pages_final/A4/CP-001_teapot.pdf",
+      "pixels": "2480x3508",
+      "dims_check": "PASS"
+    }
+  },
+  "caveats": [
+    "Source ~1100x1430 px, print files are interpolated enlargements.",
+    "Geometry verdicts are subjective visual judgment by Claude; owner approves."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "image": "raw_from_chatgpt/CP-001_teapot_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check)",
+  "verdict": "PASS_STRUCTURE_ONLY",
+  "findings": [
+    {"id": "structure", "severity": "pass", "note": "Round body, lid with knob, spout, loop handle attached at two points, decorative band and base ring all present and separated; no stray lines."},
+    {"id": "margin", "severity": "fail", "note": "Spout tip and handle come within ~40 px of the left/right edges (automated safe_margin FAIL)."}
+  ]
+}

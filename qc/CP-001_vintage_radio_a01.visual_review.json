@@ -1,0 +1,12 @@
+{
+  "image": "raw_from_chatgpt/CP-001_vintage_radio_a01.png",
+  "method": "visual_judgment",
+  "reviewer": "Claude (vision, subjective - not a programmatic check)",
+  "verdict": "REVISE",
+  "findings": [
+    {"id": "cabinet_double_outline", "severity": "fail", "note": "The cabinet top is drawn as two nested arches that merge into each other on the left and right sides, so it is unclear which line is the cabinet edge. Draw the cabinet as ONE single outline."},
+    {"id": "speaker_rings_distorted", "severity": "fail", "note": "The outer speaker ring is a lopsided oval and is almost touching the cabinet's inner arch. Rings should be neat circles with white space between them and the cabinet."},
+    {"id": "tuning_window", "severity": "pass", "note": "Rectangular window with one pointer line, separate from other parts."},
+    {"id": "knobs_feet", "severity": "pass", "note": "Two round knobs and two feet, clearly separated."}
+  ]
+}
